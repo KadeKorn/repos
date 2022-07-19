@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+#headers {
+    text-align: center; 
+}
+narrator-text{
+    text-align: center;
+}
+#score {
+    text-align: center;
+    padding: 1.5em;
+}
+.computer{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 1em;
+}
+.you{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.container-three{
+    text-align: center;
+}

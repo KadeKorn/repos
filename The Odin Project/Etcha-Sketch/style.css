@@ -1,0 +1,52 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .grid-item:hover{
+    color:red;
+    background-color:gold; 
+  }
+  
+  .my-colour-class{
+    background: whitesmoke;
+  }
+  
+  .button{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  body {
+    background-image: url(img/background1.jpg);
+  }
+  
+  /* .rainbow gradient{
+    background: linear-gradient(
+          90deg,
+          rgba(255, 0, 0, 1) 0%,
+          rgba(255, 154, 0, 1) 10%,
+          rgba(208, 222, 33, 1) 20%,
+          rgba(79, 220, 74, 1) 30%,
+          rgba(63, 218, 216, 1) 40%,
+          rgba(47, 201, 226, 1) 50%,
+          rgba(28, 127, 238, 1) 60%,
+          rgba(95, 21, 242, 1) 70%,
+          rgba(186, 12, 248, 1) 80%,
+          rgba(251, 7, 217, 1) 90%,
+          rgba(255, 0, 0, 1) 100%
+      )} */
