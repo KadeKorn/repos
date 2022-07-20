@@ -5,7 +5,7 @@ function makeRows(rows, cols) {
   container.style.setProperty('--grid-cols', cols);
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
-    cell.innerText = (c + 1);
+    cell.innerText = (''); // add c + 1 if you want squares to be numbered 
     container.appendChild(cell).className = "grid-item";
     //this creates the pixelated effect & has to be within the same scope as cell otherwise it won't be able to find that particular variable
     cell.addEventListener('mouseover', 
@@ -14,19 +14,23 @@ function makeRows(rows, cols) {
   };
 };
 
-// add a background image of something so that it looks better
-// make a function that // x = prompted number and y = prompted number something like that and then do makeRows(x,y); instead so that it passes through
-//incorporate this into the onclick button
 
 // this selects the button then adds a event listener when clicked
 const button = document.querySelector('button');
 button.addEventListener('click', configure);
 
-// this function is called when clicked. Asks for 2 numbers {NEED TO LIMIT IT TO 100} then passes them through as parameters 
+//update it to have 3 buttons that each have there own 'color pen' and background
+
 function configure () {
-  console.log("test");
   let x = prompt('enter a number please (limit 100 else beware)');
   let y = prompt('enter a number please (limit 100 else beware)');
   makeRows(x,y);
 }
 
+
+
+//extra credit
+// Instead of just changing the color of a square from black to white (for example),
+// have each pass through with the mouse change it to a completely random RGB value. 
+//Then try having each pass just add another 10% of black to it so that only 
+//after 10 passes is the square completely black.
