@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('assets/desk.jpg');" >
+    <audio id="audio" style="display:none" src="assets/keysound.mp3"></audio>
+    <div>
+        <div id="calculator">
+            <div id="screenBorder">
+                <div id="screen">0</div>
+                <div id="screenOp"></div>
+            </div>
+                <div id="keyContainer">
+        
+        <div id="column1" class="column">
+            <div id="AC"  class="button op" class="clrAll"><div class="outer"><div class="height"><div class="inner">AC</div></div></div></div>
+            <div id="7" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100, 92, 92)" >7</div></div></div></div>
+            <div id="4" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">4</div></div></div></div>
+            <div id="1" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">1</div></div></div></div>
+            <div id="0" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">0</div></div></div></div>
+        </div>
+        <div id="column2" class="column">
+            <div id="C"  class="button op" class="clr"><div class="outer"><div class="height"><div class="inner">C</div></div></div></div>
+            <div id="8" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">8</div></div></div></div>
+            <div id="5" class="button num" ><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">5</div></div></div></div>
+            <div id="2" class="button num" ><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">2</div></div></div></div>
+            <div id="." class="button num"><div class="outer"><div class="height"><div class="inner"  style= "background-color: rgb(100,92,92)">.</div></div></div></div>
+        </div>
+        <div id="column3" class="column">
+            <div id="M"  class="button op" class="mem"><div class="outer"><div class="height"><div class="inner">M</div></div></div></div>
+            <div id="9" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">9</div></div></div></div>
+            <div id="6" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">6</div></div></div></div>
+            <div id="3" class="button num"><div class="outer"><div class="height"><div class="inner" style= "background-color: rgb(100,92,92)">3</div></div></div></div>
+            <div id="=" class="button op" class="op"><div class="outer"><div class="height"><div class="inner">=</div></div></div></div>
+        </div>
+        <div id="column4" class="column">
+            <div id="sign"  class="button op" class="op"><div class="outer"><div class="height"><div class="inner">+/-</div></div></div></div>
+            <div id="/"  class="button op" class="op"><div class="outer"><div class="height"><div class="inner">/</div></div></div></div>
+            <div id="x"  class="button op" class="op"><div class="outer"><div class="height"><div class="inner">x</div></div></div></div>
+            <div id="-" class="button op" class="op"><div class="outer"><div class="height"><div class="inner">-</div></div></div></div>
+            <div id="+" class="button op" class="op"><div class="outer"><div class="height"><div class="inner">+</div></div></div></div>
+        </div>
+        </div>
+        </div>
+        
+    </div>
+    <p id="alert"> If you hit '/' on YOUR keyboard, FireFox will open a Quick Find bar too :) </p>
+    
+   
+    <script src="app.js"></script>
+</body>
+<footer>
+</footer>
+</html>
